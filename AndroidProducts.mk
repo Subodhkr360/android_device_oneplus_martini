@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_martini.mk
+    $(LOCAL_DIR)/custom_martini.mk
