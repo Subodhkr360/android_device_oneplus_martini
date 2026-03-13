@@ -13,13 +13,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/martini/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_martini
+PRODUCT_NAME := infinity_martini
 PRODUCT_DEVICE := martini
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := MT2111
+# Maintainer Name
+INFINITY_MAINTAINER := Anand_Reddy
+# Whether the device supports Fingerprint On Display
+TARGET_HAS_UDFPS := true
+# Whether Including Google Apps
+WITH_GAPPS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
