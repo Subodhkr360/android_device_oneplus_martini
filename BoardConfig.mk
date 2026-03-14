@@ -26,6 +26,8 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
+#for viperfx
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 # Include the proprietary files BoardConfig.
 include vendor/oneplus/martini/BoardConfigVendor.mk
