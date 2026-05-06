@@ -4,7 +4,7 @@
 # Exceptions:
 # abl.img: from OnePlus 9RT (MT2111_13.1.0.593(EX01))
 
-abl.img;AB|ab0cbff6d6b33936769b228f3dfdfe2a27c91824
+abl.img;AB|87314539c08e0fa46ada953473e6eaa99fc7b18d
 aop.img;AB
 bluetooth.img;AB
 cpucp.img;AB
