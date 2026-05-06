@@ -71,6 +71,10 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     sys.brightness.disable_gamma_conversion=true
 
+#
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.lunaris.maintainer=Snake | 集める
+
 # Vibrator
 $(call soong_config_set_bool,OPLUS_LINEAGE_VIBRATOR_HAL,USE_EFFECT_STREAM,true)
 
@@ -83,6 +87,8 @@ $(call inherit-product, vendor/oneplus/martini/martini-vendor.mk)
 $(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 #viperfx
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
 
 
 
