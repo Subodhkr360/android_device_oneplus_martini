@@ -8,5 +8,3 @@ ro.surface_flinger.set_touch_timer_ms=200
 # USB
 vendor.usb.product_string=OnePlus 9RT
 ro.product.marketname=OnePlus 9RT
-ro.infinity.soc=Snapdragon 888
-ro.infinity.camera=50MP + 16MP + 2MP
