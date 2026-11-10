@@ -71,6 +71,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.product.marketname="OnePlus-9RT" \
+    ro.infinity.soc="Snapdragon-888" \
+    ro.infinity.camera="50MP+16MP+2MP"    
+
 # Vibrator
 $(call soong_config_set_bool,OPLUS_LINEAGE_VIBRATOR_HAL,USE_EFFECT_STREAM,true)
 
