@@ -70,6 +70,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.lunaris.maintainer=AnandReddy_ch
 
 # Vibrator
 $(call soong_config_set_bool,OPLUS_LINEAGE_VIBRATOR_HAL,USE_EFFECT_STREAM,true)
